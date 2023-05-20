@@ -1,0 +1,57 @@
+@media screen and (min-width:400px){
+    html body{
+        background-color: #234;
+    }
+}
+@media screen and (max-width:800px){
+    h1{
+        text-align: center;
+    }
+}
+@media screen and (orientation:landscape){
+    article body{
+        max-width:50char;
+    }
+}
+@media screen and (min-height:200px) {
+    h1{
+        background-color: blueviolet;
+    }
+}
+@media print{
+    p{
+        font-family: sans-serif;
+    }
+}
+@media (prefers-color-schems:light){
+    body, h1{
+        color:#111;
+        background-color: #DDD;
+    }
+}
+@media screen and (hover:none){
+    a{
+        background-color: #212;
+        padding-top:2px ;
+        padding-bottom:2px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+@media screen and (min-width:800px) and (max-width:900px){
+    img{
+        opacity: 0;
+        /*Tambien podria usar visibility:hidden*/
+    }
+}
+@media screen and (min-width:200px) and (max-width:400px){
+    figure img{
+        height: 400px;
+        object-fit: cover;
+    }
+}
+@media screen and (min-resolution:2dppx){
+    article{
+        background-color: #667;
+    }
+}
