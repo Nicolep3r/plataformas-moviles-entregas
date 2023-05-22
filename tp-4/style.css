@@ -24,7 +24,7 @@
     }
 }
 @media (prefers-color-schems:light){
-    body, h1{
+   html body, h1{
         color:#111;
         background-color: #DDD;
     }
