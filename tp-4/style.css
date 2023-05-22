@@ -50,7 +50,7 @@
         object-fit: cover;
     }
 }
-@media screen and (min-resolution:2dppx){
+@media (resolution>2dppx){
    body article{
         background-color: #667;
     }
