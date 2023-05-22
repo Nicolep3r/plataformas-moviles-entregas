@@ -10,7 +10,7 @@
 }
 @media screen and (orientation:landscape){
     article body{
-        max-width:50char;
+        max-width:50ch;
     }
 }
 @media screen and (min-height:200px) {
