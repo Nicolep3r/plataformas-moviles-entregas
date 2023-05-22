@@ -51,7 +51,7 @@
     }
 }
 @media screen and (min-resolution:2dppx){
-    article{
+   body article{
         background-color: #667;
     }
 }
