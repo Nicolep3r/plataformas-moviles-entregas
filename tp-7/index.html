@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TP-7: Funciones</title>
+</head>
+<body>
+<p>Completar con la implementación de las funciones correspondientes</p>
+<script type="text/javascript">
+// Numeros
+
+// Implementar una función "suma" que retorne la suma de 2 numeros
+// ejemplo: suma(2,3) retorna 5
+
+function suma(num1, num2) {
+    return num1 + num2;
+}
+
+console.log("suma(2,3): ", suma(2,3))
+
+//Funcion anonima suma 
+var MiSegundaFuncionSuma = function (num1, num2) {
+    return num1+ num2;
+}
+var segundoResultado = MiSegundaFuncionSuma(2,2);
+console.log("suma(2,2): ", segundoResultado)
+//3er forma
+
+var MiTercerFuncionSumaa = (num1, num2) =>{
+    return num1 + num2;
+}
+var tercerResultadoo = MiTercerFuncionSumaa(10,20);
+console.log("suma(10,20)", tercerResultadoo);
+
+// Implementar una función "elevarAlCubo" que eleve al cubo un numero
+// ejemplo: elevarAlCubo(3) retorna 27
+	function elevarAlCubo(num1){
+		return num1**3;
+	}
+console.log("elevarAlCubo(3): ", elevarAlCubo(3))
+
+
+//Funcion anonima evelar al cubo
+var ElevarCubo2 = function (num1) {
+    return num1**3;
+}
+var ElevarResultado = ElevarCubo2(2);
+console.log("ElevarCubo2(2): ", ElevarResultado)
+//tercer form
+
+var MiTercerFuncionCubo = (num1) =>{
+    return num1**3;
+}
+var ResCubo = MiTercerFuncionCubo(10);
+console.log("ElevarCubo3(10): ", ResCubo);
+
+// Implementar una función "restoDivisionEntera" para devolver el resto de una división entera entre un dividendo y un divisor
+// ejemplo: restoDivisionEntera(3,2) retorna 1
+function restoDivisionEntera(num1, num2){
+	return num1 % num2;
+}
+console.log("restoDivisionEntera(3,2): ", restoDivisionEntera(3,2))
+
+
+//Funcion anonima DivEntera
+var restoDivisionEntera2 = function (num1, num2) {
+    return num1 % num2;
+}
+var segundoResultadoRest =restoDivisionEntera2 (2,2);
+console.log("RestDivEnt(2,2): ", segundoResultadoRest)
+//3er forma
+var MiTercerFuncionDivEnt = (num1, num2) =>{
+    return num1 % num2;
+}
+var ResDiv = MiTercerFuncionDivEnt(5,2);
+console.log("ResDiv: ", ResDiv);
+
+// Implementar una función "numeroPi" para devolver el numero PI
+// ejemplo: numeroPi() retorna 3,14...
+	function numeroPi(){
+		return Math.PI;
+	}
+console.log("numeroPi(): ", numeroPi())
+
+//2da form
+var NumPi = function () {
+    return Math.PI;
+}
+var ResulPi =NumPi ();
+console.log("Pi 2 : ", ResulPi)
+
+//3er forma
+
+
+var MiTercerFuncionPi = () =>{
+    return Math.PI;
+}
+var ResPi= MiTercerFuncionPi();
+console.log("Pi3: ", ResPi);
+
+
+// Implementar una función "numeroRandom" para devolver un número random / aleatorio
+// ejemplo: numeroRandom() retorna 0,123...
+function numeroRandom(){
+	return Math.random();
+}
+console.log("numeroRandom(): ", numeroRandom())
+//2da forma
+var Random2 = function () {
+    return Math.random();
+}
+var Ran2 =Random2 ();
+console.log("RANDOM2: ", Ran2);
+//3er forma
+var MiTercerFuncionRand = () =>{
+    return Math.random();
+}
+var Ran3 = MiTercerFuncionRand();
+console.log("Random3: ", Ran3);
+
+
+// Implementar una función "mejorNumeroRandom" para devolver un número random entre 2 valores recibidos como parámetros
+// ejemplo: mejorNumeroRandom(1,6) retorna 3
+function mejorNumeroRandom(min, max){
+	return Math.random()*(max-min)+min;
+}
+console.log("mejorNumeroRandom(1,6): ", mejorNumeroRandom(1,6))
+//2da forma
+var mejorNumeroRandom2 = function (min, max) {
+    return Math.random()*(max-min)+min;
+}
+var Mejorran =mejorNumeroRandom2 (1,6);
+console.log("MEJORRANDOM2 : ", Mejorran);
+//3er forma
+
+var MiTercerFuncionMejorRan = (min,max) =>{
+    return Math.random()*(max-min)+min;
+}
+var ResMejorRan = MiTercerFuncionMejorRan(1,6);
+console.log("Mejor random 3 : ", ResMejorRan);
+
+
+// Cadenas de Caracteres
+
+// Implementar una función "transformarMayuscula" que transforme a mayúscula la palabra recibida como parámetro
+// ejemplo: transformarMayuscula("Plataformas Móviles") retorna "PLATAFORMAS MÓVILES"
+function transformarMayuscula(){
+	return "Plataformas Móviles".toUpperCase()
+}
+console.log("transformarMayuscula(\"Plataformas Móviles\"): ", transformarMayuscula("Plataformas Móviles"))
+//segunda forma
+var transformarMayuscula2 = function () {
+    return "Plataformas Móviles".toUpperCase();
+}
+var tranfmayus2 =transformarMayuscula2();
+console.log("TRANF 2: ", tranfmayus2)
+//3er forma
+
+
+var transformarMayuscula3 = () =>{
+    return "Plataformas Móviles".toUpperCase();
+}
+var Tranf3= transformarMayuscula3();
+console.log("Tranf mayus 3 : ", Tranf3);
+
+
+// Implementar una función "primeraLetra" que nos devuelva la inicial de la palabra recibida como parámetro
+// ejemplo: primeraLetra("Plataformas") retorna "P"
+function primeraLetra(palabra) {
+  return palabra.charAt(0);
+}
+console.log("primeraLetra(\"Plataformas\"): ", primeraLetra("Plataformas"))
+//2da forma
+
+var primeraLetra2 = function (palabra) {
+    return palabra.charAt(0);
+}
+var primerlet2 =primeraLetra2("Plataformas");
+console.log("Primer letra2: ", primerlet2)
+
+//3er forma
+
+var primeraLetra3 = (palabra) =>{
+    return palabra.charAt(0);
+}
+var primerlet3= primeraLetra3("Plataformas");
+console.log("Primer letra 3 : ", primerlet3);
+
+
+
+// Implementar una función "ultimaLetra" que nos devuelva la letra final la palabra recibida como parámetro
+// ejemplo: ultimaLetra("Plataformas") retorna "s"
+function ultimaLetra(palabra) {
+  return palabra.charAt(palabra.length - 1);
+}
+
+console.log("ultimaLetra(\"Plataformas\"): ", ultimaLetra("Plataformas"))
+//2da fomra
+
+var ultimaLetra2 = function (palabra) {
+    return palabra.charAt(palabra.length - 1);
+}
+var ultletra2 =ultimaLetra2("Plataformas");
+console.log("Ult letra2: ", ultletra2)
+//3er forma
+
+var ultimaLetra3 = (palabra) =>{
+    return palabra.charAt(palabra.length - 1);
+}
+var ultletra3= ultimaLetra3("Plataformas");
+console.log("Ult letra 3 : ", ultletra3);
+
+
+
+// Implementar una función "primeraLetraMayuscula" que devuelve la palabra original con su primera letra en mayúscula
+// ejemplo: primeraLetraMayuscula("plataformas") retorna "Plataformas"
+function primeraLetraMayuscula(palabra) {
+  return palabra.charAt(0).toUpperCase() + palabra.slice(1);
+}
+console.log("primeraLetraMayuscula(\"plataformas\"): ", primeraLetraMayuscula("plataformas"))
+//2da forma
+
+var primeraLetraMayuscula2= function (palabra) {
+    return palabra.charAt(0).toUpperCase() + palabra.slice(1);
+}
+var primletr2 =primeraLetraMayuscula2("plataformas");
+console.log("Primer letra2: ", primletr2)
+//3er forma
+
+var Primermayus = (palabra) =>{
+    return palabra.charAt(0).toUpperCase() + palabra.slice(1);
+}
+var primmay= Primermayus("plataformas");
+console.log("primer let 3 : ", primmay);
+
+
+// Implementar una función "palabraAListaDeLetras" que dada una palabra me retorne un listado de sus letras
+// ejemplo: palabraAListaDeLetras("hola") retorna ['h', 'o', 'l', 'a'];
+function palabraAListaDeLetras(palabra) {
+  return palabra.split('');
+}
+console.log("palabraAListaDeLetras(\"hola\"): ", palabraAListaDeLetras("hola"))
+//2da form
+
+var palabraAListaDeLetras2= function (palabra) {
+    return palabra.split('');
+}
+var palab2 =palabraAListaDeLetras2("hola");
+console.log("Palb lista2: ", palab2);
+
+//3er forma
+
+var Listapal = (palabra) =>{
+    return palabra.split('');
+}
+var list= Listapal("hola");
+console.log("Lista 3 : ", list);
+
+
+
+// Implementar una función "listaDeLetrasAPalabra" que dado un listado de letras, devuelva una palabra
+// ejemplo: listadoDeLetrasAPalabra(["h", "o", "l", "a"]) retorna "hola";
+
+function listaDeLetrasAPalabra(lista) {
+  return lista.join('');
+}
+console.log("listadoDeLetrasAPalabra([\"h\", \"o\", \"l\", \"a\"]): ", listaDeLetrasAPalabra(["h", "o", "l", "a"]))
+
+//2da form
+var listaDeLetrasAPalabra2= function (lista) {
+    return lista.join('');
+}
+var listpal2 =listaDeLetrasAPalabra2(["h", "o", "l", "a"]);
+console.log("Listado2: ", listpal2)
+//3er forma
+var List_apal= (lista) =>{
+	return lista.join('');
+}
+var listapal3= List_apal(["h", "o", "l", "a"]);
+console.log("Listdo3 : ", listapal3);
+
+
+
+// Implementar una función "palabraInvertida" que devuelva la palabra invertida
+// ejemplo: palabraInvertida("hola") retorna "aloh";
+function palabraInvertida(palabra) {
+  return palabra.split('').reverse().join('');
+}
+console.log("palabraInvertida(\"hola\"): ", palabraInvertida("hola"))
+//2da form
+
+var palabraInvertida2= function (palabra) {
+    return palabra.split('').reverse().join('');
+}
+var Invert2 =palabraInvertida2("hola");
+console.log("Invertida 2 : ", Invert2)
+
+//tercer forma
+
+
+var palabraInvertida3= (palabra) =>{
+	return palabra.split('').reverse().join('');
+}
+var Invert3= palabraInvertida3("hola");
+console.log("Invertida 3 : ", Invert3);
+
+
+
+</script>
+</body>
+</html>
